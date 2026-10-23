@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark light">
+<meta name="theme-color" content="#0e1014">
+<meta name="description" content="TomaUno: teleprompter gratis para grabar tu voz o tu video, línea por línea. Todo se queda en tu dispositivo.">
+<title>TomaUno</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="TomaUno">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<header class="top">
+  <span class="marca">Toma<b>Uno</b></span>
+  <span class="prueba-tag" id="prueba-tag" hidden>MODO PRUEBA</span>
+  <nav class="tabs" aria-label="Pantallas">
+    <a href="#guiones" data-ruta="guiones" id="tab-guiones"></a>
+    <a href="#grabar" data-ruta="grabar" id="tab-grabar"></a>
+    <a href="#tomas" data-ruta="tomas" id="tab-tomas"></a>
+  </nav>
+</header>
+<main>
+  <section class="view" id="v-guiones" aria-label="Guiones"></section>
+  <section class="view" id="v-grabar" aria-label="Grabar"></section>
+  <section class="view" id="v-tomas" aria-label="Tomas"></section>
+</main>
+<div id="toasts" aria-live="polite"></div>
+<input type="file" id="archivos" accept=".md,.txt,.markdown,text/plain,text/markdown" multiple hidden>
+<noscript><p style="padding:20px">TomaUno necesita JavaScript para funcionar.</p></noscript>
+<script src="app.js"></script>
+</body>
+</html>

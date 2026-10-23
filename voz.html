@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#1D3FBF">
+<meta property="og:image" content="voz-mural.webp">
+<meta name="description" content="Presta tu voz para un personaje virtual dominicano: lee un texto corto y graba tu voz en el celular.">
+<meta property="og:title" content="Presta tu voz para un personaje">
+<meta property="og:description" content="Graba 25 segundos leyendo un texto. Toma unos 5 minutos.">
+<title>Donar voz · TomaUno</title>
+<link rel="manifest" href="voz.webmanifest">
+<link rel="icon" href="voz-icon-192.png" type="image/png">
+<link rel="apple-touch-icon" href="voz-icon-180.png">
+<meta name="apple-mobile-web-app-title" content="Donar voz">
+<link rel="stylesheet" href="voz.css">
+</head>
+<body>
+<header class="vz-top">
+  <button class="vz-atras" id="vz-atras" aria-label="Atrás" hidden><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg></button>
+  <a class="vz-logo" href="#inicio" aria-label="TomaUno, Donar voz: ir al inicio"><img src="voz-logo.png" alt="" width="42" height="42"><span class="vz-marca">TomaUno<small>Donar voz</small></span></a>
+  <span class="prueba-tag" id="prueba-tag" hidden>PRUEBA</span>
+  <span class="vz-paso" id="vz-paso"></span>
+</header>
+<main id="vz"></main>
+<div id="toasts" aria-live="polite"></div>
+<noscript><p style="padding:20px">Esta página necesita JavaScript para funcionar.</p></noscript>
+<script src="voz.js"></script>
+</body>
+</html>

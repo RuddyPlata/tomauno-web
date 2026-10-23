@@ -1,0 +1,26 @@
+{
+  "name": "TomaUno · Donar voz",
+  "short_name": "Donar voz",
+  "description": "Graba tu voz leyendo un texto corto para un personaje virtual.",
+  "lang": "es",
+  "start_url": "voz.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#E4F2EC",
+  "theme_color": "#1D3FBF",
+  "icons": [
+    {
+      "src": "voz-icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "voz-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
